@@ -5,8 +5,8 @@ const mysql = require('mysql');
 const dbConn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Mayu@7081',
-    database: 'company_management_system_db'
+    password: 'password',
+    database: 'project'
 });
 
 dbConn.connect(function(error){

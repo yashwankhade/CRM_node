@@ -12,7 +12,7 @@ var Companys = function(companys){
 
 // get all companys
 Companys.getAllCompanys = (result) =>{
-    dbConn.query('SELECT * FROM companys', (err, res)=>{
+    dbConn.query('SELECT * FROM company', (err, res)=>{
         if(err){
             console.log('Error while fetching companys', err);
             result(null,err);
