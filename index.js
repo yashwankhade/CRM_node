@@ -32,6 +32,9 @@ const adminregisterRoutes = require('./src/routes/adminregister.route');
 // import accessories routes
 const accessoriesRoutes = require('./src/routes/accessories.route');
 
+// import attendance routes
+const attendanceRoutes = require('./src/routes/attendance_employee.route');
+
 // create employee routes
 app.use('/api/v1/employee', employeeRoutes);
 
@@ -46,6 +49,9 @@ app.use('/api/v1/adminregister', adminregisterRoutes);
 
 // create accessories routes
 app.use('/api/v1/accessories', accessoriesRoutes);
+
+// create attendance routes
+app.use('/api/v1/attendance', attendanceRoutes);
 
 // listen to the port
 app.listen(port, ()=>{

@@ -5,8 +5,9 @@ const mysql = require('mysql');
 const dbConn = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password',
-    database: 'project'
+    password: 'Password@123',
+    database: 'assign6',
+    port:3308
 });
 
 dbConn.connect(function(error){
